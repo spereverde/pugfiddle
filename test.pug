@@ -1,0 +1,7 @@
+mixin link(href, name)
+  li
+    a(href=href)= name
+
+ul
+  +link("http://www.kuleuven.be/research/", "Research")
+  +link("http://www.kuleuven.be/english/education/", "Education")

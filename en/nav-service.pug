@@ -1,0 +1,28 @@
+nav.nav-service.pull-lg-right
+  ul
+    li.dropdown
+      a(href="http://www.kuleuven.be/admissions/", id="admissions-menu", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Admissions 
+        i.material-icons keyboard_arrow_down
+      ul(aria-labelledby="admissions-menu").dropdown-menu
+        include admissions.pug
+
+    li.dropdown
+      a(href="http://www.kuleuven.be/english/living/", id="living-menu", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Living in Leuven 
+        i.material-icons keyboard_arrow_down
+      include living.pug
+            
+    li.dropdown
+      a(href="#", id="internal-tools-menu", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") Internal tools 
+        i.material-icons keyboard_arrow_down
+      include tools.pug
+    
+    li.dropdown
+      a(href="#", id="a-z-menu", data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") A-Z 
+        i.material-icons keyboard_arrow_down
+      include az.pug
+
+    li
+      a(href="http://www.kuleuven.be/personeel/jobsite/en/") Jobs
+    
+    li
+      a(href="http://www.kuleuven.be/english/contact") Contact
